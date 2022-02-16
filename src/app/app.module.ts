@@ -11,12 +11,15 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import { MainComponent } from './main/main.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    MainContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { MainComponent } from './main/main.component';
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
