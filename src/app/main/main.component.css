@@ -2,6 +2,19 @@ mat-sidenav-container {
   height: 100%;
 }
 
+mat-sidenav-content {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
 p {
   margin: 15px;
+  padding: 5px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: xx-large;
+}
+
+a {
+  text-decoration: none;
 }
