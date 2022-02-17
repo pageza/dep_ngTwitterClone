@@ -1,11 +1,9 @@
-<mat-sidenav-container *ngIf="showNav" class="side-container" autosize>
+<mat-sidenav-container autosize>
   <mat-sidenav mode="side" opened>
-    <ul>
-      <li><a [routerLink]="">Home</a></li>
-      <li><a>Explore</a></li>
-      <li><a>Following</a></li>
-    </ul>
+      <p><a [routerLink]="['home']">Home</a></p>
+      <p><a [routerLink]="['explore']">Explore</a></p>
+      <p><a [routerLink]="['following']">Following</a></p>
   </mat-sidenav>
-  <mat-sidenav-content><app-main-content></app-main-content></mat-sidenav-content>
+  <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
 </mat-sidenav-container>
 

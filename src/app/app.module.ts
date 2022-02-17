@@ -13,6 +13,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import { MainComponent } from './main/main.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import {MatCardModule} from "@angular/material/card";
+import { ExploreComponent } from './explore/explore.component';
+import { FollowingComponent } from './following/following.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import {MatCardModule} from "@angular/material/card";
     HeaderComponent,
     MainComponent,
     MainContentComponent,
+    ExploreComponent,
+    FollowingComponent,
   ],
   imports: [
     BrowserModule,

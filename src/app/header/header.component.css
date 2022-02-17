@@ -1,4 +1,8 @@
 mat-toolbar {
   background: darkmagenta;
-  color: darkseagreen;
+  color: #dc970f;
+}
+
+.spacer1 {
+  flex: 1 1 auto;
 }
