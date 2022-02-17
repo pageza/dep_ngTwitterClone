@@ -1,6 +1,7 @@
 mat-toolbar {
   background: darkmagenta;
   color: #dc970f;
+  height: 10%;
 }
 
 .spacer1 {

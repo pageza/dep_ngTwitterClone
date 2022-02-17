@@ -1,3 +1,7 @@
+a, a:visited, a:active, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 .tile {
   max-width: 400px;
   margin: 25px;

@@ -15,6 +15,8 @@ import { MainContentComponent } from './main-content/main-content.component';
 import {MatCardModule} from "@angular/material/card";
 import { ExploreComponent } from './explore/explore.component';
 import { FollowingComponent } from './following/following.component';
+import { FollowersComponent } from './followers/followers.component';
+import { SinglePostComponent } from './single-post/single-post.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FollowingComponent } from './following/following.component';
     MainContentComponent,
     ExploreComponent,
     FollowingComponent,
+    FollowersComponent,
+    SinglePostComponent,
   ],
   imports: [
     BrowserModule,

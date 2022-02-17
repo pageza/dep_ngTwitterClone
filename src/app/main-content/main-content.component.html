@@ -1,11 +1,11 @@
 <div>
   <mat-card *ngFor="let post of dummyData" class="tile">
-    <mat-card-header>
+    <a [routerLink]="[post.postID]"><mat-card-header>
       <mat-card-title>{{post.name}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       {{post.content}}
-    </mat-card-content>
+    </mat-card-content></a>
   </mat-card>
 
 </div>
