@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {UsersService} from "../users.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-main-content',
@@ -38,9 +40,16 @@ export class MainContentComponent implements OnInit {
       content: "This is a bunch of dummy data for the post"
     }
   ]
-  constructor() { }
+  user: Object
+
+  constructor(
+    private _users: UsersService,
+    private _route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this._route.params.subscribe( data => this.user = data)
+
   }
 
 }
