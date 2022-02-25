@@ -6,9 +6,11 @@ import {FollowingComponent} from "./following/following.component";
 import {FollowersComponent} from "./followers/followers.component";
 import {SinglePostComponent} from "./single-post/single-post.component";
 import {CreateUserComponent} from "./create-user/create-user.component";
+import {LoginComponent} from "./login/login.component";
 
 const routes: Routes = [
   { path: 'createUser', component: CreateUserComponent},
+  { path: 'login', component: LoginComponent},
   { path: 'home', component: MainContentComponent },
   { path: 'explore', component: ExploreComponent },
   { path: 'following', component: FollowingComponent},
