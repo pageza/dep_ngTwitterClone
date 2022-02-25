@@ -14,7 +14,7 @@ export class UsersService {
   }
   createUser(userData: object){
     console.log("hitting the service")
-    return this._http.post(this.url+'/api/user', userData)
+    return this._http.get(this.url+'/api/user', userData)
     // return console.log(userData)
   }
 }
