@@ -5,11 +5,16 @@ import {HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class UsersService {
-
+  url: string = '//localhost:3030'
   constructor(
     private _http: HttpClient
   ) { }
   getOneUser(uname: string){
-    return this._http.get('/api/'+ uname)
+    return this._http.get(this.url+'/api/'+ uname)
+  }
+  createUser(userData: object){
+    console.log("hitting the service")
+    return this._http.post(this.url+'/api/user', userData)
+    // return console.log(userData)
   }
 }

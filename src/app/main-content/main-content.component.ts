@@ -40,7 +40,7 @@ export class MainContentComponent implements OnInit {
       content: "This is a bunch of dummy data for the post"
     }
   ]
-  user: Object
+  // user: Object
 
   constructor(
     private _users: UsersService,
@@ -48,7 +48,7 @@ export class MainContentComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this._route.params.subscribe( data => this.user = data)
+    // this._route.params.subscribe( data => this.user = data)
 
   }
 
