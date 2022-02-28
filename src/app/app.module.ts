@@ -18,12 +18,12 @@ import { ExploreComponent } from './explore/explore.component';
 import { FollowingComponent } from './following/following.component';
 import { FollowersComponent } from './followers/followers.component';
 import { SinglePostComponent } from './single-post/single-post.component';
-import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateUserComponent } from './_auth/create-user/create-user.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {HttpClientModule} from "@angular/common/http";
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './_auth/login/login.component';
 
 @NgModule({
   declarations: [

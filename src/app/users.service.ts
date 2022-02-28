@@ -22,4 +22,8 @@ export class UsersService {
         this._router.navigate(['/login'])
       })
   }
+  logUserIn(user: object) {
+    return this._http.post<object>(this.url, user)
+      .subscribe(response => console.log(response))
+  }
 }

@@ -5,8 +5,8 @@ import {ExploreComponent} from "./explore/explore.component";
 import {FollowingComponent} from "./following/following.component";
 import {FollowersComponent} from "./followers/followers.component";
 import {SinglePostComponent} from "./single-post/single-post.component";
-import {CreateUserComponent} from "./create-user/create-user.component";
-import {LoginComponent} from "./login/login.component";
+import {CreateUserComponent} from "./_auth/create-user/create-user.component";
+import {LoginComponent} from "./_auth/login/login.component";
 
 const routes: Routes = [
   { path: 'createUser', component: CreateUserComponent},

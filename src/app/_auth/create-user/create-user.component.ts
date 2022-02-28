@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import {UsersService} from "../users.service";
+import {UsersService} from "../../users.service";
 
 @Component({
   selector: 'app-create-user',
@@ -9,17 +9,18 @@ import {UsersService} from "../users.service";
 })
 export class CreateUserComponent implements OnInit {
   signupForm = new FormGroup({
-    fname: new FormControl(''),
-    lname: new FormControl(''),
-    uname: new FormControl(''),
+    fname: new FormControl('', [Validators.required, Validators.minLength(2)]),
+    lname: new FormControl('', [Validators.required, Validators.minLength(2)]),
+    uname: new FormControl('', [Validators.required, Validators.minLength(4)]),
     email: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('')
+    password: new FormControl('', [Validators.required, Validators.minLength(12)])
   })
   constructor(
     private _user: UsersService
   ) { }
 
   ngOnInit(): void {
+    console.log('starting component')
   }
 
   onSubmit() {
